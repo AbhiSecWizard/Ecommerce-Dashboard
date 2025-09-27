@@ -139,7 +139,7 @@ export const Header = () => {
               <ListItemIcon>
                 <PersonAdd fontSize="small" />
               </ListItemIcon>
-              New Follower
+              My Notification
             </MenuItem>
             <MenuItem onClick={handleNotificationClose}>
               <ListItemIcon>
