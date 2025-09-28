@@ -19,8 +19,6 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Divider from "@mui/material/Divider";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Settings from "@mui/icons-material/Settings";
 import Logout from "@mui/icons-material/Logout";
 
 const iconCss = {
@@ -103,7 +101,7 @@ export const Header = () => {
 
           {/* Notification */}
           <IconButton sx={iconCss} onClick={handleNotificationClick}>
-            <FaRegBell size={22} />
+            <FaRegBell size={22}/>
           </IconButton>
 
           {/* Notification Menu */}
@@ -136,24 +134,70 @@ export const Header = () => {
             anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
           >
             <MenuItem onClick={handleNotificationClose}>
-              <ListItemIcon>
-                <PersonAdd fontSize="small" />
-              </ListItemIcon>
-              My Notification
+              <h1>Orders(12)</h1>
+             
             </MenuItem>
-            <MenuItem onClick={handleNotificationClose}>
-              <ListItemIcon>
-                <FaShieldAlt />
-              </ListItemIcon>
-              Security Alert
-            </MenuItem>
-            <Divider />
-            <MenuItem onClick={handleNotificationClose}>
-              <ListItemIcon>
-                <Settings fontSize="small" />
-              </ListItemIcon>
-              Notification Settings
-            </MenuItem>
+             <Divider className="mb-2.5"/>
+             <div className="overflow-y-auto h-60 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300">
+              <div className="display flex flex-row gap-p-2 w-100 hover:bg-blue-100">
+                <div className="ml-4 h-13 w-19 border-2 border-amber-400 bg-gray-200 rounded-full mb-4">
+                    <img src={ProfilePic} className="rounded-full h-12 w-16"/>                          
+                </div>
+                <div className="ml-6">
+                          <h1><span className="text-[18px] font-bold">Abhishek Yadav:-</span> 
+                          <span className="">your oders is just an never this is keep up to wakeup</span>
+                          <p className="mt-1 text-sm text-blue-500">
+                               order two mins ago
+                          </p>
+                 </h1>
+                </div>
+             </div>
+              <div className="display flex flex-row gap-p-2 w-100 hover:bg-blue-100">
+                <div className="ml-4 h-13 w-19 border-2 border-amber-400 bg-gray-200 rounded-full mb-4">
+                    <img src={ProfilePic} className="rounded-full h-12 w-16"/>                          
+                </div>
+                <div className="ml-6">
+                          <h1><span className="text-[18px] font-bold">Abhishek Yadav:-</span> 
+                          <span className="">your oders is just an never this is keep up to wakeup</span>
+                          <p className="mt-1 text-sm text-blue-500">
+                               order two mins ago
+                          </p>
+                 </h1>
+                </div>
+             </div>
+              <div className="display flex flex-row gap-p-2 w-100 hover:bg-blue-100">
+                <div className="ml-4 h-13 w-19 border-2 border-amber-400 bg-gray-200 rounded-full mb-4">
+                    <img src={ProfilePic} className="rounded-full h-12 w-16"/>                          
+                </div>
+                <div className="ml-6">
+                          <h1><span className="text-[18px] font-bold">Abhishek Yadav:-</span> 
+                          <span className="">your oders is just an never this is keep up to wakeup</span>
+                         <p className="mt-1 text-sm text-blue-500">
+                               order two mins ago
+                          </p>
+                 </h1>
+                </div>
+             </div>
+              <div className="display flex flex-row gap-p-2 w-100 hover:bg-blue-100">
+                <div className="ml-4 h-13 w-19 border-2 border-amber-400 bg-gray-200 rounded-full mb-4">
+                    <img src={ProfilePic} className="rounded-full h-12 w-16"/>                          
+                </div>
+                <div className="ml-6">
+                          <h1><span className="text-[18px] font-bold">Abhishek Yadav:-</span> 
+                          <span className="">your oders is just an never this is keep up to wakeup</span>
+                          <p className="mt-1 text-sm text-blue-500">
+                               order two mins ago
+                          </p>
+                 </h1>
+                </div>
+                
+             </div>
+                   
+              <div className="bg-amber-700 sticky bottom-0 p-2">
+                <Button className="text-white w-full rounded-none">See All Notifications</Button>
+              </div>
+             </div>
+           
           </Menu>
         </div>
 
