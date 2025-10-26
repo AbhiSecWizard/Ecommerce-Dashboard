@@ -58,16 +58,16 @@ export const Header = () => {
   const handleCartClick = () => setCartOpen(!cartOpen);
 
   return (
-    <div className="flex justify-between items-center p-4 shadow-md bg-white">
+    <div className="flex justify-between items-center p-4 shadow-md bg-white h-16">
       {/* Left Section */}
       <div className="flex items-center gap-6">
         {/* Logo */}
-        <NavLink to="/dashboard">
-          <div className="flex items-center h-16 w-40">
+        <NavLink to="/">
+          <div className="flex items-center h-18 w-40">
             <img
               src={Logo}
               alt="Logo"
-              className="h-14 w-full object-contain mx-auto"
+              className="h-18 w-full object-contain mx-auto"
             />
           </div>
         </NavLink>

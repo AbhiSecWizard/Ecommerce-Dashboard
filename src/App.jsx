@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Dashboard } from "./pages/Dashboard";
 import { MainLayout } from "./components/Layout/MainLayout";
-
+// import { DashboardDrop } from "./components/MainContents/DashboardDrop/index.jsx";
 
 export const App = () => {
   const router = createBrowserRouter([
@@ -9,15 +8,13 @@ export const App = () => {
       path: "/",
       element: <MainLayout/>,
       children: [
-        {
-          path: "/dashboard",
-          element: <Dashboard />,
-        },
+      {index: true},
       ],
     },
   ]);
 
   return <>
+
   {/* <MainLayout /> */}
   <RouterProvider router={router} />;
   </>
