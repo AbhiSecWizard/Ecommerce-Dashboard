@@ -1,6 +1,19 @@
 .close{
     display:none;
+    transition: all 0.5s ease-in-out;
 }
 .open{
     display:block;
+    transition: all 0.5s ease-in-out;
+}
+.rotate{
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+.no-rotate{
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+.custom-scroller::-webkit-scrollbar {
+    width: 8px;
 }
