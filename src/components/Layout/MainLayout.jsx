@@ -1,17 +1,27 @@
-import { Footer } from "../Footer/Footer"
-import { Header } from "../Header/Header"
-import { Outlet } from "react-router-dom"
-import { Sidebar } from "../Sidebar/index.jsx"
-// import { DashboardDrop } from "../../components/MainContents/DashboardDrop/index.jsx" 
-export const MainLayout = ()=>{
-return (  
-<div>
+import { Header } from "../Header/Header";
+import { Sidebar } from "../Sidebar";
+import { Outlet } from "react-router-dom";
+import { Dashboard } from "../../pages/Dashboard";
+export const MainLayout = () => {
+  return (
+    <div className="h-screen flex flex-col">
+      
+      {/* Navbar */}
+      <Header />
 
- 
-     <Header />
-      <Outlet />
- 
-      <Sidebar/>     
-  </div>
-)
-}
+      {/* Body */}
+      <div className="flex flex-1 overflow-hidden">
+        
+        {/* Sidebar */}
+        <Sidebar />
+                 {/* <Dashboard/>   */}
+
+        {/* Page Content */}
+        <main className="flex-1 overflow-y-auto bg-gray-100 p-4">
+          <Outlet />
+       </main>
+         
+      </div>
+    </div>
+  );
+};
